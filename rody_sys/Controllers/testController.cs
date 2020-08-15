@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 
 namespace rody_sys.Areas.Controllers
-{   [Route("test1")]
+{   [RoutePrefix("test1")]
     public class testController : Controller
     {
        
@@ -18,59 +18,59 @@ namespace rody_sys.Areas.Controllers
 
 
 
-        public ActionResult select()
-        {
-            return View();
-        }
+        //public ActionResult select()
+        //{
+        //    return View();
+        //}
 
 
-        public string getSelected(int [] month)
-        {
-            string m = "";
+        //public string getSelected(int [] month)
+        //{
+        //    string m = "";
 
-            for (int i = 0; i < month.Length;i++ )
-            {
-                m += month[i] +" ";
-            }
+        //    for (int i = 0; i < month.Length;i++ )
+        //    {
+        //        m += month[i] +" ";
+        //    }
 
-                return "month=" + m;
-        }
-
-
-        public ActionResult testTree()
-        {
-            return View();
-        }
+        //        return "month=" + m;
+        //}
 
 
-        public ActionResult scripts()
-        {
-            return PartialView();
+        //public ActionResult testTree()
+        //{
+        //    return View();
+        //}
 
-        }
+
+        //public ActionResult scripts()
+        //{
+        //    return PartialView();
+
+        //}
 
 
-        public ActionResult testPartial()
-        {
-            return PartialView();           
+        //public ActionResult testPartial()
+        //{
+        //    return PartialView();           
             
-        }
+        //}
 
-        [HttpGet]
-        public ActionResult panel()
-        {
-            return View();
-        }
-        [HttpGet]
-        public ActionResult page_1()
-        {
-            return PartialView();
-        }
-        [HttpGet]
-        public ActionResult page_2()
-        {
-            return View();
-        }
+        //[HttpGet]
+        //public ActionResult panel()
+        //{
+        //    return View();
+        //}
+        //[HttpGet]
+        //public ActionResult page_1()
+        //{
+        //    return PartialView();
+        //}
+        //[HttpGet]
+        //public ActionResult page_2()
+        //{
+        //    return View();
+        //}
 
 
 
